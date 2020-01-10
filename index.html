@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+
+  <title>Galeria jQuery</title>  
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+  <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+
+  <style type="text/css">
+
+    body {
+      margin: 0px auto;
+      margin-top: 50px;
+      width: 500px;
+      font-family: calibri;
+    }
+
+    img {
+      margin: 20px;
+      border: solid 3px #424242;
+      box-shadow: 4px 4px 20px #888;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1 align="center">Testando plugin Fancybox</h1>
+
+  <a class="fancybox" rel="group" href="images/woody1.jpg">
+    <img src="images/woody1_thumbnail.jpg"/></a>
+
+  <a class="fancybox" rel="group" href="images/woody2.jpg">
+    <img src="images/woody2_thumbnail.jpg" alt="asdasdasd" /></a>
+
+  <a class="fancybox" rel="group" href="images/woody3.jpg">
+    <img src="images/woody3_thumbnail.jpg" alt="" /></a>
+
+  <a class="fancybox" rel="group" href="images/woody4.jpg">
+    <img src="images/woody4_thumbnail.jpg" alt="" /></a>
+
+  <a class="fancybox" rel="group" href="images/woody5.jpg">
+    <img src="images/woody5_thumbnail.jpg" alt="" /></a>
+
+  <a class="fancybox" rel="group" href="images/woody6.jpg">
+    <img src="images/woody6_thumbnail.jpg" alt="" /></a>
+
+  <p align="center">Web Social Dev ©</p>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox();
+    });
+  </script>
+
+</body>
+</html>
